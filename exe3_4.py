@@ -1,8 +1,8 @@
-def do_twice(f) :
-	f()
-	f()
+def do_twice(f, val) :
+	f(val)
+	f(val)
 
-def print_spam() :
-	print 'spam'
+def print_spam(val) :
+	print val
 
-do_twice(print_spam)
+do_twice(print_spam, 'Hello')
